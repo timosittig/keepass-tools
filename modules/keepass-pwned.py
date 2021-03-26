@@ -11,6 +11,9 @@ def handle_sys_args():
     parser.add_argument("database", help="is the database file that you want to prove", type=str)
     parser.add_argument("-p", "--password", help="is the password", type=str, required=False)
     parser.add_argument("-k", "--keyfile", help="is your key file", type=str, required=False)
+    parser.add_argument("--export-csv", help="destination path for the csv export", type=str, required=False)
+    parser.add_argument("--export-json", help="destination path for the json export", type=str, required=False)
+    parser.add_argument("--export-xml", help="destination path for the xml export", type=str, required=False)
     
     args = parser.parse_args()
 
